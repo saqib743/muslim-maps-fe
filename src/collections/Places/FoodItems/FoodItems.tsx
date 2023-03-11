@@ -9,26 +9,26 @@ export default function FoodItems() {
   return (
     <Box display="flex">
       <Box borderRadius="20px" marginRight="8px">
-        <Image src={pic1} alt="pic1" />
+        <Image src={pic1} alt="pic1" quality="10" />
       </Box>
       <Box display="flex">
         <Box>
           <Box width="50%">
             <Box width="50%" borderRadius="20px" marginRight="8px">
-              <Image src={pic2} alt="pic2" />
+              <Image src={pic2} alt="pic2" quality="10" />
             </Box>
             <Box borderRadius="20px">
-              <Image src={pic4} alt="pic4" />
+              <Image src={pic4} alt="pic4" quality="10" />
             </Box>
           </Box>
         </Box>
         <Box>
           <Box width="50%">
             <Box width="50%" borderRadius="20px" marginRight="8px">
-              <Image src={pic3} alt="pic3" />
+              <Image src={pic3} alt="pic3" quality="10" />
             </Box>
             <Box borderRadius="20px">
-              <Image src={pic5} alt="pic5" />
+              <Image src={pic5} alt="pic5" quality="10" />
             </Box>
           </Box>
         </Box>
