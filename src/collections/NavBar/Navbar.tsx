@@ -15,6 +15,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import logo from "../../resources/logo.svg";
 import country from "../../resources/country.svg";
 import favourite from "../../resources/favourite.svg";
+import habibi from "../../resources/habibi.jpg";
 import notifications from "../../resources/notifications.svg";
 import { Icon } from "@mui/material";
 import { SearchBar } from "@/components";
@@ -53,7 +54,14 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" style={{ backgroundColor: "white" }}>
+    <AppBar
+      position="static"
+      style={{
+        backgroundColor: "white",
+        boxShadow: "none",
+        borderBottom: "1px solid #F3F2F2",
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Image src={logo} alt={"logo"} />
@@ -145,7 +153,10 @@ function ResponsiveAppBar() {
               </Tooltip>
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                  <Avatar
+                    alt="Remy Sharp"
+                    src="https://i.ibb.co/CMk05LW/habibi.jpg"
+                  />
                 </IconButton>
               </Tooltip>
             </Box>
