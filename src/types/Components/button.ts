@@ -1,6 +1,6 @@
 export interface ButtonProps {
   variant: "primary" | "green" | "grey";
-  text: string;
+  text?: string;
   icon?: any;
   onClick: () => void;
   width?: string;
