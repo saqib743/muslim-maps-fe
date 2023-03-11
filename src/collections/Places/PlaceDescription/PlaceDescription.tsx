@@ -37,7 +37,7 @@ export default function PlaceDescription() {
             <Button
               icon={favIcon}
               onClick={() => {}}
-              text="Save"
+              text="Like"
               variant="primary"
               width="105px"
               justifyContent="space-between"
@@ -49,7 +49,7 @@ export default function PlaceDescription() {
               onClick={() => {}}
               text="Share"
               variant="primary"
-              width="105px"
+              width="115px"
               justifyContent="space-between"
             />
           </Box>

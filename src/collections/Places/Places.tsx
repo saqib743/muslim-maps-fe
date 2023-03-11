@@ -1,4 +1,5 @@
 import Container from "@mui/material/Container";
+import About from "./About/About";
 import FoodItems from "./FoodItems/FoodItems";
 import PlaceDescription from "./PlaceDescription/PlaceDescription";
 export default function Places() {
@@ -6,6 +7,7 @@ export default function Places() {
     <Container maxWidth="xl">
       <PlaceDescription />
       <FoodItems />
+      <About />
     </Container>
   );
 }
