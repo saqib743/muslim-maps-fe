@@ -8,7 +8,7 @@ export default function About() {
   const data =
     "The Hagia Sophia Grand Mosque / Ayasofya-i Kebir Cami-i Şerifi, with its innovative architecture, rich history, religious significance and extraordinary characteristics has been fighting against time for centuries, was the largest Eastern Roman Church in Istanbul. Constructed three times in the same location, it is the world’s oldest and fastest-completed cathedral. With its breathtaking domes that look like hanging in the air, monolithic marble columns and unparalleled mosaics, is one of the wonders of world’s architecture history.";
   return (
-    <Box marginTop="20px">
+    <Box marginTop="30px" marginBottom="30px">
       <Box>
         <Typography
           fontSize="24px"
@@ -17,6 +17,7 @@ export default function About() {
           letterSpacing="0.01em"
           lineHeight="35px"
           textAlign="left"
+          marginTop="30px"
         >
           About
         </Typography>
@@ -29,6 +30,7 @@ export default function About() {
           letterSpacing="0.01em"
           lineHeight="26px"
           textAlign="left"
+          marginTop="30px"
         >
           {data}
         </Typography>
@@ -41,11 +43,12 @@ export default function About() {
           letterSpacing="0.01em"
           lineHeight="26px"
           textAlign="left"
+          marginTop="30px"
         >
           Read More
         </Typography>
       </Box>
-      <Box marginTop="15px" display="flex" alignContent="center">
+      <Box display="flex" alignContent="center" marginTop="30px">
         <Box
           marginRight="20px"
           display="flex"

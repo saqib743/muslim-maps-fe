@@ -1,4 +1,5 @@
 import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
+import Menu from "../Menu/Menu";
 import ResponsiveAppBar from "../NavBar/Navbar";
 import Places from "../Places/Places";
 
@@ -8,6 +9,7 @@ export default function FoodListingContainer() {
       <ResponsiveAppBar />
       <Breadcrumbs />
       <Places />
+      <Menu />
     </>
   );
 }

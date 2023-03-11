@@ -1,3 +1,4 @@
+import { Divider } from "@mui/material";
 import Container from "@mui/material/Container";
 import About from "./About/About";
 import FoodItems from "./FoodItems/FoodItems";
