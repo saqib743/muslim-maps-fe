@@ -13,11 +13,6 @@ module.exports = {
         destination: "/foodlisting",
         permanent: true,
       },
-      {
-        source: "",
-        destination: "/foodlisting",
-        permanent: true,
-      },
     ];
   },
 };
