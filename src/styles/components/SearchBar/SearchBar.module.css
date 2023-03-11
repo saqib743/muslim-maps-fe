@@ -1,0 +1,23 @@
+.container {
+  border: 1px solid grey;
+  border-radius: 25px;
+  padding: 5px;
+  width: fit-content;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.searchIcon {
+  margin: 5px;
+}
+.searchText {
+  margin: 5px;
+}

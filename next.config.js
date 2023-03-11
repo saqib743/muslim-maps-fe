@@ -1,6 +1,23 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
+
+module.exports = {
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/foodlisting",
+        permanent: true,
+      },
+      {
+        source: "",
+        destination: "/foodlisting",
+        permanent: true,
+      },
+    ];
+  },
+};
