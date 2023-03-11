@@ -17,7 +17,7 @@ export default function Breadcrumbs() {
     <Link underline="hover" key="3" color="inherit" href="/">
       Place details
     </Link>,
-    <Typography key="3" color="text.primary">
+    <Typography key="3" color="#165B00">
       Hagia Sophia Mosque
     </Typography>,
   ];
