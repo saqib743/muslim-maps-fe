@@ -7,3 +7,4 @@ export * from "./LocationsAndSiteInformation";
 export * from "./SimilarListings";
 export * from "./FoodListingContainer";
 export * from "./BottomNavigation";
+export * from "./Footer";
