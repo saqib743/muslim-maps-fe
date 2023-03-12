@@ -7,9 +7,14 @@ import logo from "../../resources/logo.svg";
 
 export default function BottomNavigation() {
   return (
-    <Box borderTop="2px solid #F3F2F2" sx={{ backgroundColor: "#FCFCFC" }}>
+    <Box
+      borderTop="2px solid #F3F2F2"
+      sx={{ backgroundColor: "#FCFCFC" }}
+      paddingTop="120px"
+      paddingBottom="120px"
+    >
       <Container maxWidth="xl">
-        <Box display="flex" marginTop="120px" marginBottom="120px">
+        <Box display="flex">
           <>
             <Box
               width="20%"

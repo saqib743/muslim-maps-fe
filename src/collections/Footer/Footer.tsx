@@ -4,11 +4,7 @@ import Image from "next/image";
 import socialMediaStack from "../../resources/socialMediaStack.svg";
 export default function Footer() {
   return (
-    <Box
-      borderTop="2px solid #F3F2F2"
-      padding="0px 30px 0px"
-      sx={{ backgroundColor: "#FCFCFC" }}
-    >
+    <Box borderTop="2px solid #F3F2F2" padding="0px 30px 0px">
       <Container maxWidth="xl">
         <Box
           marginTop="30px"
