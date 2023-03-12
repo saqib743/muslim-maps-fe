@@ -26,10 +26,22 @@ a {
   src: url("./fonts/Gilroy-Regular.woff");
 }
 @font-face {
+  font-family: "Gilroy-semibold";
+  src: url("./fonts/Gilroy-SemiBold.woff");
+}
+@font-face {
   font-family: "Gilroy-bold";
-  src: url("./fonts/Gilroy-ExtraBold.otf");
+  src: url("./fonts/Gilroy-Bold.woff");
 }
 @font-face {
   font-family: "Gilroy-light";
   src: url("./fonts/Gilroy-Light.otf");
+}
+@font-face {
+  font-family: "Gilroy-medium";
+  src: url("./fonts/Gilroy-Medium.woff");
+}
+@font-face {
+  font-family: "Gilroy-extra-bold";
+  src: url("./fonts/Gilroy-ExtraBold.otf");
 }
