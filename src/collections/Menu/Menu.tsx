@@ -101,4 +101,28 @@ const MenuItems = [
   //     description: "Description about dish, ingredient and other goes here.",
   //     price: "₺55",
   //   },
+  {
+    image: burger,
+    title: "Burger",
+    description: "Description about dish, ingredient and other goes here.",
+    price: "₺55",
+  },
+  {
+    image: bluffinTuna,
+    title: "Bluffin Tuna",
+    description: "Description about dish, ingredient and other goes here.",
+    price: "₺55",
+  },
+  {
+    image: limaRoll,
+    title: "Lima Roll",
+    description: "Description about dish, ingredient and other goes here.",
+    price: "₺55",
+  },
+  {
+    image: kayoNoodles,
+    title: "Kayo Noodles",
+    description: "Description about dish, ingredient and other goes here.",
+    price: "₺55",
+  },
 ];

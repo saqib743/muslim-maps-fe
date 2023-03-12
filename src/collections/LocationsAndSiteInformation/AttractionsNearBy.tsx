@@ -83,4 +83,32 @@ const Locations = [
     reviews: { rating: 4, reviewCount: 98 },
     location: "₺ • 3.4 kms away",
   },
+  {
+    image: historicAreasOfIstanbul,
+    title: "Historic Areas Of Istanbul",
+    description: "HIstoric Place",
+    reviews: { rating: 4, reviewCount: 98 },
+    location: "₺ • 3.4 kms away",
+  },
+  {
+    image: aasofyaCamii,
+    title: "Aasofya Camii",
+    description: "Theater",
+    reviews: { rating: 4, reviewCount: 98 },
+    location: "₺ • 3.4 kms away",
+  },
+  {
+    image: heritageArtGallery,
+    title: "Heritage Art Gallery",
+    description: "Art Galleries",
+    reviews: { rating: 4, reviewCount: 98 },
+    location: "₺ • 3.4 kms away",
+  },
+  {
+    image: historicAreasOfIstanbul,
+    title: "Historic Areas Of Istanbul",
+    description: "HIstoric Place",
+    reviews: { rating: 4, reviewCount: 98 },
+    location: "₺ • 3.4 kms away",
+  },
 ];

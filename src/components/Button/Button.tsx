@@ -36,7 +36,10 @@ export default function Button({
   };
   return (
     <Box
-      sx={{ backgroundColor: styles[variant].backgroundColor }}
+      sx={{
+        backgroundColor: styles[variant].backgroundColor,
+        ":hover": { cursor: "pointer" },
+      }}
       onClick={onClick}
       borderRadius="100px"
       border={styles[variant].border}

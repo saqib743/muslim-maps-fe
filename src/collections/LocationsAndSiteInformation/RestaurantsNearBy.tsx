@@ -84,4 +84,32 @@ const Locations = [
     reviews: { rating: 4, reviewCount: 98 },
     location: "₺ • 3.4 kms away",
   },
+  {
+    image: gulhaneSarkSofrası,
+    title: "Gulhane Sark Sofrası",
+    description: "Mediterranean · Turkish",
+    reviews: { rating: 4, reviewCount: 98 },
+    location: "₺ • 3.4 kms away",
+  },
+  {
+    image: zerzevanFish,
+    title: "Zerzevan Fish & Kebab",
+    description: "Seafood · International",
+    reviews: { rating: 4, reviewCount: 98 },
+    location: "₺ • 3.4 kms away",
+  },
+  {
+    image: sultanPalaceCafe,
+    title: "Sultan Palace Cafe",
+    description: "Seafood · Barbecue · Mediterranean",
+    reviews: { rating: 4, reviewCount: 98 },
+    location: "₺ • 3.4 kms away",
+  },
+  {
+    image: gulhaneSarkSofrası,
+    title: "Gulhane Sark Sofrası",
+    description: "Mediterranean · Turkish",
+    reviews: { rating: 4, reviewCount: 98 },
+    location: "₺ • 3.4 kms away",
+  },
 ];
