@@ -60,6 +60,7 @@ function ResponsiveAppBar() {
         backgroundColor: "white",
         boxShadow: "none",
         borderBottom: "2px solid #F3F2F2",
+        padding: "8px 0px 8px 0px",
       }}
     >
       <Container maxWidth="xl">
@@ -135,7 +136,16 @@ function ResponsiveAppBar() {
                 }}
                 style={{ color: "black" }}
               >
-                {page}
+                <Typography
+                  fontFamily="Gilroy-medium"
+                  fontSize="14px"
+                  lineHeight="26px"
+                  letterSpacing="0.01em"
+                  fontWeight="500"
+                  marginLeft="15px"
+                >
+                  {page}
+                </Typography>
               </Button>
             ))}
           </Box>
@@ -143,16 +153,27 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Box display="flex">
               <Tooltip title="Country">
-                <Image src={country} alt="country" />
+                <Box marginLeft="15px">
+                  <Image src={country} alt="country" />
+                </Box>
               </Tooltip>
               <Tooltip title="favourite">
-                <Image src={favourite} alt="favourite" />
+                <Box marginLeft="15px">
+                  {" "}
+                  <Image src={favourite} alt="favourite" />
+                </Box>
               </Tooltip>
               <Tooltip title="Notifications">
-                <Image src={notifications} alt="notifications" />
+                <Box marginLeft="15px">
+                  {" "}
+                  <Image src={notifications} alt="notifications" />
+                </Box>
               </Tooltip>
               <Tooltip title="Open settings">
-                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                <IconButton
+                  onClick={handleOpenUserMenu}
+                  sx={{ p: 0, marginLeft: "20px" }}
+                >
                   <Avatar
                     alt="Remy Sharp"
                     src="https://i.ibb.co/CMk05LW/habibi.jpg"
