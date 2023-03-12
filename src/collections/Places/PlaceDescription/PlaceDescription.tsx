@@ -23,7 +23,7 @@ export default function PlaceDescription() {
           <Typography
             fontSize="48px"
             fontWeight="700"
-            fontFamily="Gilroy"
+            fontFamily="Gilroy-bold"
             lineHeight="58px"
             letterSpacing="0.01em"
             textAlign="left"

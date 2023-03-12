@@ -12,7 +12,11 @@ import Button from "@/components/Button/Button";
 
 export default function Menu() {
   return (
-    <Box borderTop="2px solid #F3F2F2" marginTop="30px">
+    <Box
+      borderTop="2px solid #F3F2F2"
+      sx={{ backgroundColor: "#FCFCFC" }}
+      paddingBottom="30px"
+    >
       <Container maxWidth="xl">
         <Box
           marginTop="30px"

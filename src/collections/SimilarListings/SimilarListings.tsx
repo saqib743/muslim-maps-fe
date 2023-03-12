@@ -13,7 +13,11 @@ import LocationsCarousal from "@/components/LocationsCarousal/LocationsCarousal"
 import { Box } from "@mui/system";
 export default function SimilarListings() {
   return (
-    <Box borderTop="2px solid #F3F2F2" marginTop="30px">
+    <Box
+      borderTop="2px solid #F3F2F2"
+      sx={{ backgroundColor: "#FCFCFC" }}
+      paddingBottom="30px"
+    >
       <Container maxWidth="xl">
         <Box
           display="flex"
