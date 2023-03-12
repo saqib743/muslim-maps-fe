@@ -14,7 +14,7 @@ export function SearchBar() {
             <Search color="secondary" />
           </div>
           <div className={styles.searchText}>
-            <Input placeholder="Search" />
+            <Input placeholder="Search" fullWidth disableUnderline />
           </div>
         </div>
       </div>
