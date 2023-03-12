@@ -27,6 +27,8 @@ export default function PlaceDescription() {
             lineHeight="58px"
             letterSpacing="0.01em"
             textAlign="left"
+            color="#101828"
+            marginRight="8px"
           >
             The Urban Chocolatier
           </Typography>
@@ -71,11 +73,25 @@ export default function PlaceDescription() {
           <Rating color="green" value={4} />
           <Typography
             fontSize="16px"
-            fontFamily="Gilroy-light"
+            fontFamily="Gilroy-medium"
             fontWeight="500"
             marginLeft="10px"
+            lineHeight="26px"
+            letterSpacing="0.01em"
           >
-            4.0 (202 Reviews)
+            4.0
+          </Typography>
+          <Typography
+            fontSize="16px"
+            fontFamily="Gilroy-medium"
+            fontWeight="500"
+            lineHeight="26px"
+            letterSpacing="0.01em"
+            color="#646467"
+            marginLeft="2px"
+          >
+            {" "}
+            (202 Reviews)
           </Typography>
         </Box>
 
@@ -90,8 +106,10 @@ export default function PlaceDescription() {
           <Image src={pin} alt="pin" />
           <Typography
             fontSize="16px"
-            fontFamily="Gilroy-light"
+            fontFamily="Gilroy-medium"
             fontWeight="500"
+            lineHeight="26px"
+            letterSpacing="0.01em"
           >
             Istanbul, Turkey
           </Typography>
@@ -112,10 +130,12 @@ export default function PlaceDescription() {
           />
           <Typography
             fontSize="16px"
-            fontFamily="Gilroy-light"
+            fontFamily="Gilroy-medium"
             fontWeight="500"
             marginLeft="10px"
             marginRight="10px"
+            letterSpacing="0.01em"
+            lineHeight="26px"
           >
             8:00 AM - 9:30 AM
           </Typography>
@@ -130,10 +150,12 @@ export default function PlaceDescription() {
         >
           <Typography
             fontSize="16px"
-            fontFamily="Gilroy-light"
+            fontFamily="Gilroy-medium"
             fontWeight="500"
             marginLeft="10px"
             marginRight="10px"
+            letterSpacing="0.01em"
+            lineHeight="26px"
           >
             Call
           </Typography>
@@ -144,10 +166,13 @@ export default function PlaceDescription() {
         <Box marginRight="10px">
           <Typography
             fontSize="20px"
-            fontFamily="Gilroy-light"
-            fontWeight="700"
+            fontFamily="Gilroy-medium"
+            fontWeight="500"
+            letterSpacing="0.01em"
+            lineHeight="30px"
             marginLeft="10px"
             marginRight="10px"
+            color="#010F07"
           >
             Eat in Istanbul Turkey
           </Typography>

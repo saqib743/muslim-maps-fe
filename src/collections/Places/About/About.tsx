@@ -12,12 +12,13 @@ export default function About() {
       <Box>
         <Typography
           fontSize="24px"
-          fontFamily="Gilroy"
+          fontFamily="Gilroy-semiBold"
           fontWeight="600"
           letterSpacing="0.01em"
-          lineHeight="35px"
+          lineHeight="34.5px"
           textAlign="left"
           marginTop="30px"
+          color="#010F07"
         >
           About
         </Typography>
@@ -25,12 +26,13 @@ export default function About() {
       <Box marginTop="10px">
         <Typography
           fontSize="16px"
-          fontFamily="Gilroy-light"
+          fontFamily="Gilroy"
           fontWeight="400"
           letterSpacing="0.01em"
           lineHeight="26px"
           textAlign="left"
           marginTop="30px"
+          color="#242429"
         >
           {data}
         </Typography>
@@ -38,12 +40,13 @@ export default function About() {
       <Box marginTop="10px">
         <Typography
           fontSize="16px"
-          fontFamily="Gilroy-light"
+          fontFamily="Gilroy-semiBold"
           fontWeight="600"
           letterSpacing="0.01em"
           lineHeight="26px"
           textAlign="left"
           marginTop="30px"
+          color="#242429"
         >
           Read More
         </Typography>
@@ -60,7 +63,8 @@ export default function About() {
           </Box>
           <Typography
             fontSize="16px"
-            fontFamily="Gilroy-light"
+            fontFamily="Gilroy-medium"
+            color="#010F07"
             fontWeight="500"
             letterSpacing="0.01em"
             lineHeight="26px"
@@ -80,7 +84,8 @@ export default function About() {
           </Box>
           <Typography
             fontSize="16px"
-            fontFamily="Gilroy-light"
+            fontFamily="Gilroy-medium"
+            color="#010F07"
             fontWeight="500"
             letterSpacing="0.01em"
             lineHeight="26px"
@@ -100,7 +105,8 @@ export default function About() {
           </Box>
           <Typography
             fontSize="16px"
-            fontFamily="Gilroy-light"
+            fontFamily="Gilroy-medium"
+            color="#010F07"
             fontWeight="500"
             letterSpacing="0.01em"
             lineHeight="26px"
@@ -120,7 +126,8 @@ export default function About() {
           </Box>
           <Typography
             fontSize="16px"
-            fontFamily="Gilroy-light"
+            fontFamily="Gilroy-medium"
+            color="#010F07"
             fontWeight="500"
             letterSpacing="0.01em"
             lineHeight="26px"

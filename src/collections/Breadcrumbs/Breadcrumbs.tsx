@@ -9,16 +9,54 @@ import { Box } from "@mui/system";
 export default function Breadcrumbs() {
   const breadcrumbs = [
     <Link underline="hover" key="1" color="inherit" href="/">
-      Home
+      <Typography
+        fontSize="16px"
+        lineHeight="26px"
+        fontWeight="500"
+        letterSpacing="0.01em"
+        fontFamily="Gilroy-medium"
+        color="#646467"
+      >
+        Home
+      </Typography>
     </Link>,
-    <Link underline="hover" key="2" color="inherit" href="/">
-      Places
+    <Link underline="hover" key="2" color="#646467" href="/">
+      <Typography
+        fontSize="16px"
+        lineHeight="26px"
+        fontWeight="500"
+        letterSpacing="0.01em"
+        fontFamily="Gilroy-medium"
+        color="#646467"
+      >
+        {" "}
+        Places
+      </Typography>
     </Link>,
-    <Link underline="hover" key="3" color="inherit" href="/">
-      Place details
+    <Link underline="hover" key="3" color="#646467" href="/">
+      <Typography
+        fontSize="16px"
+        lineHeight="26px"
+        fontWeight="500"
+        letterSpacing="0.01em"
+        fontFamily="Gilroy-medium"
+        color="#646467"
+      >
+        {" "}
+        Place details
+      </Typography>
     </Link>,
-    <Typography key="3" color="#165B00">
-      Hagia Sophia Mosque
+    <Typography key="4">
+      <Typography
+        fontSize="16px"
+        lineHeight="26px"
+        fontWeight="500"
+        letterSpacing="0.01em"
+        fontFamily="Gilroy-medium"
+        color="#165B00"
+      >
+        Hagia Sophia Mosque
+      </Typography>
     </Typography>,
   ];
   return (

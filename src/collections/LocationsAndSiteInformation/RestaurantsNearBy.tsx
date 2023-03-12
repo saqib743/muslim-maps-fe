@@ -20,11 +20,12 @@ export default function RestaurantsNearBy() {
       >
         <Typography
           fontSize="24px"
-          fontFamily="Gilroy"
+          fontFamily="Gilroy-semiBold"
           fontWeight="600"
           letterSpacing="0.01em"
-          lineHeight="35px"
+          lineHeight="34.5px"
           textAlign="left"
+          color="#010F07"
         >
           Restaurants nearby
         </Typography>

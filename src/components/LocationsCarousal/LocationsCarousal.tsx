@@ -21,7 +21,7 @@ export default function LocationsCarousal({
             <Image src={item.image} alt={item.title} />
             <Typography
               fontSize="16px"
-              fontFamily="Gilroy-light"
+              fontFamily="Gilroy-semiBold"
               fontWeight="600"
               lineHeight="26px"
               letterSpacing="0.01em"
@@ -33,12 +33,13 @@ export default function LocationsCarousal({
 
             <Typography
               fontSize="12px"
-              fontFamily="Gilroy-light"
+              fontFamily="Gilroy-medium"
               fontWeight="500"
               lineHeight="26px"
               letterSpacing="0.01em"
               textAlign="left"
               margin="5px 10px 0px 10px"
+              color="#646467"
             >
               {item.description}
             </Typography>
@@ -46,7 +47,7 @@ export default function LocationsCarousal({
               <Rating value={item.reviews.rating} />
               <Typography
                 fontSize="12px"
-                fontFamily="Gilroy-light"
+                fontFamily="Gilroy"
                 fontWeight="400"
                 lineHeight="22px"
                 letterSpacing="0.01em"
@@ -59,12 +60,13 @@ export default function LocationsCarousal({
 
             <Typography
               fontSize="14px"
-              fontFamily="Gilroy-light"
+              fontFamily="Gilroy"
               fontWeight="500"
               lineHeight="26px"
               letterSpacing="0.01em"
               textAlign="left"
               margin="5px 10px 0px 10px"
+              color="#646467"
             >
               {item.location}
             </Typography>
