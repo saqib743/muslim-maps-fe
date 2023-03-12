@@ -29,40 +29,48 @@ export default function BottomNavigation() {
                   width="20%"
                   display="flex"
                   flexDirection="column"
+                  justifyContent="space-between"
                   key={key}
                 >
-                  <Typography
-                    fontFamily="Gilroy-semibold"
-                    fontWeight="600"
-                    fontSize="20px"
-                    lineHeight="30px"
-                    letterSpacing="0.01em"
-                    marginBottom="20px"
-                  >
-                    {navItem.title}
-                  </Typography>
-                  {navItem.links.map((link, key) => {
-                    return (
-                      <>
-                        <Typography
-                          fontFamily="Gilroy"
-                          fontWeight="400"
-                          fontSize="16px"
-                          lineHeight="26px"
-                          letterSpacing="0.01em"
-                          key={key}
-                          marginTop="15px"
-                          textAlign="left"
-                        >
-                          {link.text}
-                        </Typography>
-                      </>
-                    );
-                  })}
-                  <Box position="fixed" bottom={0}>
+                  <Box>
+                    <Typography
+                      fontFamily="Gilroy-semibold"
+                      fontWeight="600"
+                      fontSize="20px"
+                      lineHeight="30px"
+                      letterSpacing="0.01em"
+                      marginBottom="20px"
+                    >
+                      {navItem.title}
+                    </Typography>
+                    {navItem.links.map((link, key) => {
+                      return (
+                        <>
+                          <Typography
+                            fontFamily="Gilroy"
+                            fontWeight="400"
+                            fontSize="16px"
+                            lineHeight="26px"
+                            letterSpacing="0.01em"
+                            key={key}
+                            marginTop="15px"
+                            textAlign="left"
+                          >
+                            {link.text}
+                          </Typography>
+                        </>
+                      );
+                    })}
+                  </Box>
+                  <Box>
                     {navItem.icons?.map((icons, key) => {
                       return (
-                        <Box key={key} marginBottom="10px">
+                        <Box
+                          key={key}
+                          marginBottom={
+                            navItem.icons.length === key - 1 ? "10px" : ""
+                          }
+                        >
                           <Image src={icons.icon} alt="icon" />
                         </Box>
                       );
