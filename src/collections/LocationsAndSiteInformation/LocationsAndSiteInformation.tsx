@@ -8,11 +8,11 @@ export default function LocationAndSiteInformation() {
     <Box borderTop="2px solid #F3F2F2" paddingBottom="30px">
       <Container maxWidth="xl">
         <Box display="flex" justifyContent="space-between">
-          <Box width="60%">
+          <Box width="65%">
             <RestaurantsNearBy />
             <AttractionsNearBy />
           </Box>
-          <Box>
+          <Box width="30%">
             <SiteInformation />
           </Box>
         </Box>

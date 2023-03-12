@@ -20,9 +20,14 @@ export default function BottomNavigation() {
               width="20%"
               display="flex"
               flexDirection="column"
-              alignItems="center"
+              alignItems="initial"
+              marginLeft="12px"
             >
-              <Image src={logo} alt="logo" />
+              <Image
+                src={logo}
+                alt="logo"
+                style={{ height: "50px", width: "120px" }}
+              />
             </Box>
             {bottomNavigationData.map((navItem, key) => {
               return (
