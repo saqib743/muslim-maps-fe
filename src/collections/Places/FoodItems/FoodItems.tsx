@@ -8,28 +8,55 @@ import pic5 from "../../../resources/foodItems/5.svg";
 export default function FoodItems() {
   return (
     <Box display="flex">
-      <Box borderRadius="20px" marginRight="8px">
-        <Image src={pic1} alt="pic1" quality="10" />
+      <Box borderRadius="20px" marginRight="8px" width="50%">
+        <Image
+          src={pic1}
+          alt="pic1"
+          quality="10"
+          layout="responsive"
+          objectFit="contain"
+        />
       </Box>
-      <Box display="flex">
-        <Box>
-          <Box width="50%">
-            <Box width="50%" borderRadius="20px" marginRight="8px">
-              <Image src={pic2} alt="pic2" quality="10" />
-            </Box>
-            <Box borderRadius="20px">
-              <Image src={pic4} alt="pic4" quality="10" />
-            </Box>
+      <Box display="flex" width="50%">
+        <Box width="100%">
+          <Box borderRadius="20px" marginRight="8px">
+            <Image
+              src={pic2}
+              alt="pic2"
+              quality="10"
+              layout="responsive"
+              objectFit="contain"
+            />
+          </Box>
+          <Box borderRadius="20px" marginRight="8px">
+            <Image
+              src={pic4}
+              alt="pic4"
+              quality="10"
+              layout="responsive"
+              objectFit="contain"
+            />
           </Box>
         </Box>
-        <Box>
-          <Box width="50%">
-            <Box width="50%" borderRadius="20px" marginRight="8px">
-              <Image src={pic3} alt="pic3" quality="10" />
-            </Box>
-            <Box borderRadius="20px">
-              <Image src={pic5} alt="pic5" quality="10" />
-            </Box>
+
+        <Box width="100%">
+          <Box borderRadius="20px" marginRight="8px">
+            <Image
+              src={pic3}
+              alt="pic3"
+              quality="10"
+              layout="responsive"
+              objectFit="contain"
+            />
+          </Box>
+          <Box borderRadius="20px" marginRight="8px">
+            <Image
+              src={pic5}
+              alt="pic5"
+              quality="10"
+              layout="responsive"
+              objectFit="contain"
+            />
           </Box>
         </Box>
       </Box>
