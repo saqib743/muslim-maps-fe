@@ -5,7 +5,27 @@ import Image from "next/image";
 
 export default function MenuCarousal({ menu }: MenuCarousalProps) {
   return (
-    <>
+    <Box
+      width="100%"
+      overflow="auto"
+      sx={{
+        "::-webkit-scrollbar": {
+          height: "5px",
+        },
+        " ::-webkit-scrollbar-track": {
+          boxShadow: "inset 0 0 5px #D5F4DC",
+          borderRadius: "10px",
+        },
+        "::-webkit-scrollbar-thumb": {
+          background: "#91D29F",
+          borderRadius: "5px",
+        },
+        "::-webkit-scrollbar-thumb:hover": {
+          background: "#1E692E",
+        },
+      }}
+      display="flex"
+    >
       {menu.map((item, key) => {
         return (
           <Box
@@ -55,6 +75,6 @@ export default function MenuCarousal({ menu }: MenuCarousalProps) {
           </Box>
         );
       })}
-    </>
+    </Box>
   );
 }
