@@ -70,7 +70,7 @@ export default function PlaceDescription() {
           alignItems="center"
           marginRight="10px"
         >
-          <Rating color="green" value={4} />
+          <Rating sx={{ color: "#1E692E" }} value={4} />
           <Typography
             fontSize="16px"
             fontFamily="Gilroy-medium"
