@@ -3,6 +3,7 @@ import LocationAndSiteInformation from "../LocationsAndSiteInformation/Locations
 import Menu from "../Menu/Menu";
 import ResponsiveAppBar from "../NavBar/Navbar";
 import Places from "../Places/Places";
+import SimilarListings from "../SimilarListings/SimilarListings";
 
 export default function FoodListingContainer() {
   return (
@@ -12,6 +13,7 @@ export default function FoodListingContainer() {
       <Places />
       <Menu />
       <LocationAndSiteInformation />
+      <SimilarListings />
     </>
   );
 }
