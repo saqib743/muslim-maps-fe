@@ -10,6 +10,7 @@ export default function Button({
   width,
   justifyContent,
   lowPadding,
+  maxWidth,
 }: ButtonProps) {
   const styles = {
     primary: {
@@ -19,13 +20,18 @@ export default function Button({
     },
     green: {
       color: "white",
-      backgroundColor: "green",
-      border: "1px solid green",
+      backgroundColor: "#1E692E",
+      border: "1px solid #1E692E",
     },
     grey: {
       color: "black",
       backgroundColor: "#F0F0F0",
       border: "1px solid #F0F0F0",
+    },
+    black: {
+      color: "white",
+      backgroundColor: "#010F07",
+      border: "1px solid #010F07",
     },
   };
   return (
@@ -38,7 +44,7 @@ export default function Button({
       display="flex"
       justifyContent={justifyContent}
       alignItems="center"
-      width={width ? width : "fit-content"}
+      width={width ? width : maxWidth ? "100%" : "fit-content"}
       padding={lowPadding ? "2px 10px 2px 10px" : "12px 20px 12px 20px"}
       height={lowPadding ? "" : "50px"}
     >
@@ -50,6 +56,7 @@ export default function Button({
         lineHeight="26px"
         letterSpacing="0.01em"
         textAlign="left"
+        marginLeft={text?.length && icon && "10px"}
       >
         {text}
       </Typography>
