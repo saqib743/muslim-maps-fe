@@ -23,6 +23,10 @@ a {
 
 @font-face {
   font-family: "Gilroy";
+  src: url("./fonts/Gilroy-Regular.woff");
+}
+@font-face {
+  font-family: "Gilroy-bold";
   src: url("./fonts/Gilroy-ExtraBold.otf");
 }
 @font-face {
