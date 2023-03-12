@@ -50,7 +50,7 @@ export default function Button({
     >
       {icon && <Image src={icon} alt="icon" />}
       <Typography
-        fontFamily="Gilroy-light"
+        fontFamily="Gilroy-medium"
         fontSize="16px"
         fontWeight="500"
         lineHeight="26px"

@@ -16,25 +16,26 @@ export default function SiteInformation() {
   return (
     <Box
       border="1px solid #F0F0F0"
-      padding="10px 15px 10px 15px"
+      padding="30px 15px 30px 15px"
       borderRadius="10px"
       width="min-content"
       marginTop="30px"
     >
       <Typography
-        fontFamily="Gilroy"
+        fontFamily="Gilroy-semiBold"
         fontWeight="600"
         fontSize="20px"
         lineHeight="30px"
         letterSpacing="0.01em"
-        marginBottom="10px"
+        marginBottom="20px"
+        color="#010F07"
       >
         Site Information
       </Typography>
-      <Box marginBottom="10px">
+      <Box marginBottom="20px">
         <Image src={maps} alt="maps" />
       </Box>
-      <Box marginBottom="10px">
+      <Box marginBottom="20px">
         <Button
           icon={navigation}
           onClick={() => {}}
@@ -44,10 +45,11 @@ export default function SiteInformation() {
           maxWidth
         />
       </Box>
-      <Box display="flex" alignItems="center" marginBottom="10px">
+      <Box display="flex" alignItems="center" marginBottom="20px">
         <Image src={pin} alt="pin" />
         <Typography
-          fontFamily="Gilroy-light"
+          fontFamily="Gilroy"
+          color="#010F07"
           fontWeight="400"
           fontSize="16px"
           lineHeight="26px"
@@ -57,10 +59,11 @@ export default function SiteInformation() {
           Sultan Ahmet, Ayasofya Meydanı No:1, 34122 Fatih/İstanbul, Turkey
         </Typography>
       </Box>
-      <Box display="flex" alignItems="center" marginBottom="10px">
+      <Box display="flex" alignItems="center" marginBottom="20px">
         <Image src={reciever} alt="pin" />
         <Typography
-          fontFamily="Gilroy-light"
+          fontFamily="Gilroy"
+          color="#010F07"
           fontWeight="400"
           fontSize="16px"
           lineHeight="26px"
@@ -70,10 +73,11 @@ export default function SiteInformation() {
           +90 212 522 17 50
         </Typography>
       </Box>
-      <Box display="flex" alignItems="center" marginBottom="10px">
+      <Box display="flex" alignItems="center" marginBottom="20px">
         <Image src={mail} alt="pin" />
         <Typography
-          fontFamily="Gilroy-light"
+          fontFamily="Gilroy"
+          color="#010F07"
           fontWeight="400"
           fontSize="16px"
           lineHeight="26px"
@@ -83,10 +87,11 @@ export default function SiteInformation() {
           ayasofyacamii@gov.tr
         </Typography>
       </Box>
-      <Box display="flex" alignItems="center" marginBottom="10px">
+      <Box display="flex" alignItems="center" marginBottom="20px">
         <Image src={computer} alt="pin" />
         <Typography
-          fontFamily="Gilroy-light"
+          fontFamily="Gilroy"
+          color="#010F07"
           fontWeight="400"
           fontSize="16px"
           lineHeight="26px"
@@ -96,7 +101,7 @@ export default function SiteInformation() {
           www.ayasofyacamii.gov.tr
         </Typography>
       </Box>
-      <Box display="flex" alignItems="center" marginBottom="10px">
+      <Box display="flex" alignItems="center" marginBottom="20px">
         <Box marginRight="20px">
           <Image src={facebook} alt="pin" />
         </Box>

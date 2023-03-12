@@ -19,7 +19,7 @@ export default function MenuCarousal({ menu }: MenuCarousalProps) {
             <Image src={item.image} alt={item.title} />
             <Typography
               fontSize="20px"
-              fontFamily="Gilroy-light"
+              fontFamily="Gilroy-semiBold"
               fontWeight="600"
               lineHeight="30px"
               letterSpacing="0.01em"
@@ -30,19 +30,20 @@ export default function MenuCarousal({ menu }: MenuCarousalProps) {
             </Typography>
             <Typography
               fontSize="14px"
-              fontFamily="Gilroy-light"
+              fontFamily="Gilroy"
               fontWeight="400"
               lineHeight="24px"
               letterSpacing="0.01em"
               textAlign="left"
               margin="5px 10px 0px 10px"
+              color="#646467"
             >
               {item.description}
             </Typography>
 
             <Typography
               fontSize="20px"
-              fontFamily="Gilroy-light"
+              fontFamily="Gilroy-semiBold"
               fontWeight="600"
               lineHeight="30px"
               letterSpacing="0.01em"
