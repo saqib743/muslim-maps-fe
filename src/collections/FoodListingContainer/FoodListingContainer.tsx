@@ -3,6 +3,7 @@ import LocationAndSiteInformation from "../LocationsAndSiteInformation/Locations
 import Menu from "../Menu/Menu";
 import ResponsiveAppBar from "../NavBar/Navbar";
 import Places from "../Places/Places";
+import RecentlyViewed from "../RecentlyViewed/RecentlyViewed";
 import SimilarListings from "../SimilarListings/SimilarListings";
 
 export default function FoodListingContainer() {
@@ -14,6 +15,7 @@ export default function FoodListingContainer() {
       <Menu />
       <LocationAndSiteInformation />
       <SimilarListings />
+      <RecentlyViewed />
     </>
   );
 }
