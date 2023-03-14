@@ -5,16 +5,33 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import styles from "../../styles/components/SearchBar/SearchBar.module.css";
 
-export function SearchBar() {
+export function SearchBar({ backGroundColor = "" }) {
   return (
     <Container>
-      <div className={styles.container}>
+      <div
+        className={styles.container}
+        style={{ backgroundColor: backGroundColor }}
+      >
         <div className={styles.flexRow}>
           <div className={styles.searchIcon}>
             <Search color="secondary" />
           </div>
           <div className={styles.searchText}>
-            <Input placeholder="Search" fullWidth disableUnderline />
+            <Input
+              placeholder="Search"
+              fullWidth
+              disableUnderline
+              style={{
+                backgroundColor: backGroundColor,
+                color: "#424244",
+                fontFamily: "Gilroy",
+                fontSize: "16px",
+                fontWeight: "600",
+                lineHeight: "26px",
+                letterSpacing: "0.01em",
+                textAlign: "left",
+              }}
+            />
           </div>
         </div>
       </div>

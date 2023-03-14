@@ -7,4 +7,5 @@ export interface ButtonProps {
   justifyContent: "space-between" | "center";
   lowPadding?: boolean;
   maxWidth?: boolean;
+  marginRight?: string;
 }

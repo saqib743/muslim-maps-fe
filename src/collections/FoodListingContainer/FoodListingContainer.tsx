@@ -4,6 +4,7 @@ import LocationAndSiteInformation from "../LocationsAndSiteInformation/Locations
 import Menu from "../Menu/Menu";
 import Places from "../Places/Places";
 import RecentlyViewed from "../RecentlyViewed/RecentlyViewed";
+import ReviewsAndQA from "../ReviewsAndQA/ReviewsAndQA";
 import SimilarListings from "../SimilarListings/SimilarListings";
 
 export default function FoodListingContainer() {
@@ -14,6 +15,7 @@ export default function FoodListingContainer() {
       <Menu />
       <LocationAndSiteInformation />
       <SimilarListings />
+      <ReviewsAndQA />
       <RecentlyViewed />
     </>
   );

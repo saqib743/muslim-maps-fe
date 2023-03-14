@@ -11,6 +11,7 @@ export default function Button({
   justifyContent,
   lowPadding,
   maxWidth,
+  marginRight,
 }: ButtonProps) {
   const styles = {
     primary: {
@@ -50,6 +51,7 @@ export default function Button({
       width={width ? width : maxWidth ? "100%" : "fit-content"}
       padding={lowPadding ? "2px 10px 2px 10px" : "12px 20px 12px 20px"}
       height={lowPadding ? "" : "50px"}
+      marginRight={marginRight}
     >
       {icon && <Image src={icon} alt="icon" />}
       <Typography
