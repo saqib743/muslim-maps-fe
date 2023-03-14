@@ -3,6 +3,7 @@
   border-radius: 25px;
   padding: 5px 10px 5px 10px;
   width: 400px;
+  display: flex;
 }
 .flexRow {
   display: flex;
@@ -17,6 +18,8 @@
 }
 .searchIcon {
   margin: 5px;
+  align-items: center;
+  display: flex;
 }
 .searchText {
   margin: 5px;

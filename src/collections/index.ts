@@ -8,3 +8,4 @@ export * from "./SimilarListings";
 export * from "./FoodListingContainer";
 export * from "./BottomNavigation";
 export * from "./Footer";
+export * from "./ReviewsAndQA";
