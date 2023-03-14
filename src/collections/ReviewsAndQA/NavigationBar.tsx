@@ -44,7 +44,7 @@ export default function NavigationBar({ handleChange }: NavigationBarProps) {
             <Box onClick={() => handleToggle(1)} sx={{ cursor: "pointer" }}>
               <Typography
                 fontFamily={value === 1 ? "Gilroy-semiBold" : "Gilroy"}
-                color={value === 0 ? "#010F07" : "#424244"}
+                color={value === 1 ? "#010F07" : "#424244"}
                 fontWeight={value === 1 ? "600" : "400"}
                 fontSize="24px"
                 lineHeight="34.5px"
