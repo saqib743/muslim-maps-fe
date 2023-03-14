@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { Container } from "@mui/system";
+import CommentsManager from "./CommentsManager";
 import { ReviewPanel } from "./ReviewPanel";
 
 export default function Reviews() {
@@ -50,7 +51,7 @@ export default function Reviews() {
           </Box>
         </Box>
         <Box width="55%" display="flex" justifyContent="center">
-          R
+          <CommentsManager />
         </Box>
       </Box>
     </Container>

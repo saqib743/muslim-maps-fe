@@ -8,4 +8,5 @@ export interface ButtonProps {
   lowPadding?: boolean;
   maxWidth?: boolean;
   marginRight?: string;
+  iconReverse?: boolean;
 }
