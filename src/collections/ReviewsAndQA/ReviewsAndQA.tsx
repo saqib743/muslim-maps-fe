@@ -16,6 +16,19 @@ export default function ReviewsAndQA() {
     <>
       <NavigationBar handleChange={handleChange} />
       {value === 0 && <Reviews />}
+      {value === 1 && (
+        <Box
+          display="flex"
+          justifyContent="center"
+          marginTop="50px"
+          marginBottom="50px"
+        >
+          <Typography fontFamily="Gilroy" fontWeight="500" fontSize="50px">
+            {" "}
+            Under Development
+          </Typography>
+        </Box>
+      )}
     </>
   );
 }
