@@ -1,12 +1,22 @@
-import { Box, Radio, Rating, Typography } from "@mui/material";
+import {
+  Box,
+  Checkbox,
+  Divider,
+  FormControlLabel,
+  Radio,
+  Rating,
+  Typography,
+} from "@mui/material";
+import TravelerRatings from "./TravellerRatings";
+import TravellerTypes from "./TravellerTypes";
 
 export function ReviewPanel() {
   return (
     <Box border="1px solid #F0F0F0" borderRadius="10px" width="90%">
       <Box
-        sx={{ backgroundColor: "#F0F0F0" }}
+        sx={{ backgroundColor: "#F0F0F060" }}
         borderRadius="10px"
-        padding="15px"
+        padding="20px"
       >
         <Typography
           fontFamily="Gilroy-semiBold"
@@ -36,33 +46,9 @@ export function ReviewPanel() {
           </Box>
         </Box>
       </Box>
-      <Box padding="15px" marginTop="10px">
-        <Typography
-          fontFamily="Gilroy-semiBold"
-          fontSize="16px"
-          fontWeight="600"
-          lineHeight="26px"
-          letterSpacing="0.01em"
-          textAlign="left"
-          color="#010F07"
-        >
-          Traveller rating
-        </Typography>
-
-        {/* <Radio>
-          <Typography
-            fontFamily="Gilroy"
-            fontSize="14px"
-            fontWeight="400"
-            lineHeight="24px"
-            letterSpacing="0.01em"
-            textAlign="left"
-            color="#010F07"
-          >
-            Traveller rating
-          </Typography>
-        </Radio> */}
-      </Box>
+      <TravelerRatings />
+      <Divider />
+      <TravellerTypes />
     </Box>
   );
 }
