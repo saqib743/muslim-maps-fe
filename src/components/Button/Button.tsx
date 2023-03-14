@@ -12,6 +12,7 @@ export default function Button({
   lowPadding,
   maxWidth,
   marginRight,
+  iconReverse,
 }: ButtonProps) {
   const styles = {
     primary: {
@@ -52,6 +53,7 @@ export default function Button({
       padding={lowPadding ? "2px 10px 2px 10px" : "12px 20px 12px 20px"}
       height={lowPadding ? "" : "50px"}
       marginRight={marginRight}
+      flexDirection={iconReverse !== undefined ? "row-reverse" : "initial"}
     >
       {icon && <Image src={icon} alt="icon" />}
       <Typography
@@ -61,6 +63,7 @@ export default function Button({
         lineHeight="26px"
         letterSpacing="0.01em"
         textAlign="left"
+        marginRight={iconReverse && icon && "10px"}
         marginLeft={text?.length && icon && "10px"}
       >
         {text}
