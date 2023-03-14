@@ -58,7 +58,12 @@ export default function NavigationBar({ handleChange }: NavigationBarProps) {
               </Typography>
             </Box>
           </Box>
-          <Box width="50%" display="flex" alignItems="center">
+          <Box
+            width="50%"
+            display="flex"
+            alignItems="center"
+            justifyContent="flex-end"
+          >
             <Box position="relative" bottom="14px">
               <SearchBar backGroundColor="#EDEDEE60" />
             </Box>
