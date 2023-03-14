@@ -23,7 +23,7 @@ export default function NavigationBar({ handleChange }: NavigationBarProps) {
           alignItems="center"
           marginTop="30px"
         >
-          <Box width="40%" display="flex">
+          <Box width="50%" display="flex">
             <Box onClick={() => handleToggle(0)} sx={{ cursor: "pointer" }}>
               <Typography
                 fontFamily={value === 0 ? "Gilroy-semiBold" : "Gilroy"}
@@ -58,7 +58,7 @@ export default function NavigationBar({ handleChange }: NavigationBarProps) {
               </Typography>
             </Box>
           </Box>
-          <Box width="60%" display="flex" alignItems="center">
+          <Box width="50%" display="flex" alignItems="center">
             <Box position="relative" bottom="14px">
               <SearchBar backGroundColor="#EDEDEE60" />
             </Box>
