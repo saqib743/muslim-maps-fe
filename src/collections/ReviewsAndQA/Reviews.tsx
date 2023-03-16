@@ -12,12 +12,7 @@ export default function Reviews() {
         marginTop="30px"
         marginBottom="30px"
       >
-        <Box
-          width="35%"
-          display="flex"
-          justifyContent="center"
-          flexDirection="column"
-        >
+        <Box width="35%" display="flex" flexDirection="column">
           <ReviewPanel />
           <Box
             marginTop="30px"
