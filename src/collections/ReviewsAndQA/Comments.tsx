@@ -199,10 +199,15 @@ const renderComment = (comment: CommentsProps) => {
           <Button
             icon={favIcon}
             onClick={() => {}}
-            text="Like"
-            variant="primary"
-            width="105px"
+            text={
+              comment.likes > 1000
+                ? comment.likes / 1000 + "k Likes"
+                : comment.likes + " Likes"
+            }
+            variant="grey"
+            width="150px"
             justifyContent="space-between"
+            lowPadding
           />
         </Box>
       </Box>
