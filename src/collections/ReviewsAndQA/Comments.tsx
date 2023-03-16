@@ -123,7 +123,7 @@ const renderComment = (comment: CommentsProps) => {
       {comment.description.length > 250 && (
         <Typography
           fontFamily="Gilroy-semiBold"
-          fontSize="20px"
+          fontSize="16px"
           fontWeight="600"
           lineHeight="30px"
           letterSpacing="0.01em"
