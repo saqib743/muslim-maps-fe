@@ -205,7 +205,6 @@ const renderComment = (comment: CommentsProps) => {
                 : comment.likes + " Likes"
             }
             variant="grey"
-            width="150px"
             justifyContent="space-between"
             lowPadding
           />
