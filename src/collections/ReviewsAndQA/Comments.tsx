@@ -120,6 +120,20 @@ const renderComment = (comment: CommentsProps) => {
       >
         {comment.description}
       </Typography>
+      {comment.description.length > 250 && (
+        <Typography
+          fontFamily="Gilroy-semiBold"
+          fontSize="20px"
+          fontWeight="600"
+          lineHeight="30px"
+          letterSpacing="0.01em"
+          textAlign={comment.locale === "en" ? "left" : "right"}
+          color="#242429"
+          marginTop="10px"
+        >
+          Read More
+        </Typography>
+      )}
       <Box display="flex" marginTop="15px">
         {comment.attachments.map((attachment, key) => (
           <Image
