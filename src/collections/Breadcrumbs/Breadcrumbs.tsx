@@ -2,10 +2,9 @@ import * as React from "react";
 import BreadcrumbsBase from "@mui/material/Breadcrumbs";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import Stack from "@mui/material/Stack";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-import Container from "@mui/material/Container";
 import { Box } from "@mui/system";
+import ResponsiveContainer from "@/components/ResponsiveContainer/ResponsiveContainer";
 export default function Breadcrumbs() {
   const breadcrumbs = [
     <Link underline="hover" key="1" color="inherit" href="/">
@@ -61,14 +60,14 @@ export default function Breadcrumbs() {
   ];
   return (
     <Box marginBottom="20px" marginTop="20px">
-      <Container maxWidth="xl">
+      <ResponsiveContainer>
         <BreadcrumbsBase
           separator={<NavigateNextIcon fontSize="small" />}
           aria-label="breadcrumb"
         >
           {breadcrumbs}
         </BreadcrumbsBase>
-      </Container>
+      </ResponsiveContainer>
     </Box>
   );
 }

@@ -1,4 +1,5 @@
-import { Box, Container } from "@mui/system";
+import ResponsiveContainer from "@/components/ResponsiveContainer/ResponsiveContainer";
+import { Box } from "@mui/system";
 import AttractionsNearBy from "./AttractionsNearBy";
 import RestaurantsNearBy from "./RestaurantsNearBy";
 import SiteInformation from "./SiteInformation";
@@ -6,7 +7,7 @@ import SiteInformation from "./SiteInformation";
 export default function LocationAndSiteInformation() {
   return (
     <Box borderTop="2px solid #F3F2F2" paddingBottom="30px">
-      <Container maxWidth="xl">
+      <ResponsiveContainer>
         <Box display="flex" justifyContent="space-between">
           <Box width="65%">
             <RestaurantsNearBy />
@@ -16,7 +17,7 @@ export default function LocationAndSiteInformation() {
             <SiteInformation />
           </Box>
         </Box>
-      </Container>
+      </ResponsiveContainer>
     </Box>
   );
 }

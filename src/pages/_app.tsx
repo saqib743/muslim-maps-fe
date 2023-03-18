@@ -16,7 +16,13 @@ export default function App({ Component, pageProps }: AppProps) {
       <CssBaseline />
 
       <Grid
-        display={{ md: "block", lg: "none", xl: "none", xxl: "none" }}
+        display={{
+          sm: "block",
+          md: "none",
+          lg: "none",
+          xl: "none",
+          xxl: "none",
+        }}
         marginTop="30px"
       >
         <Container maxWidth="md">
@@ -32,7 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
           </Typography>
         </Container>
       </Grid>
-      <Grid display={{ xs: "none", lg: "block" }}>
+      <Grid display={{ xs: "none", md: "block" }}>
         <ResponsiveAppBar />
         <Component {...pageProps} />
         <BottomNavigation />

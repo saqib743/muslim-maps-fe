@@ -1,11 +1,11 @@
+import ResponsiveContainer from "@/components/ResponsiveContainer/ResponsiveContainer";
 import { Box, Typography } from "@mui/material";
-import { Container } from "@mui/system";
 import CommentsManager from "./CommentsManager";
 import { ReviewPanel } from "./ReviewPanel";
 
 export default function Reviews() {
   return (
-    <Container maxWidth="xl">
+    <ResponsiveContainer>
       <Box
         display="flex"
         justifyContent="space-between"
@@ -49,6 +49,6 @@ export default function Reviews() {
           <CommentsManager />
         </Box>
       </Box>
-    </Container>
+    </ResponsiveContainer>
   );
 }

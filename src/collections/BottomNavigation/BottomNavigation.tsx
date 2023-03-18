@@ -1,5 +1,6 @@
+import ResponsiveContainer from "@/components/ResponsiveContainer/ResponsiveContainer";
 import { Typography } from "@mui/material";
-import { Box, Container } from "@mui/system";
+import { Box } from "@mui/system";
 import Image from "next/image";
 import appStore from "../../resources/appStore.svg";
 import googlePlay from "../../resources/googlePlay.svg";
@@ -13,7 +14,7 @@ export default function BottomNavigation() {
       paddingTop="120px"
       paddingBottom="120px"
     >
-      <Container maxWidth="xl">
+      <ResponsiveContainer>
         <Box display="flex">
           <>
             <Box
@@ -87,7 +88,7 @@ export default function BottomNavigation() {
             })}
           </>
         </Box>
-      </Container>
+      </ResponsiveContainer>
     </Box>
   );
 }
