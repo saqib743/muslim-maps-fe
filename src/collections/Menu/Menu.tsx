@@ -63,10 +63,12 @@ export default function Menu() {
               </Box>
             </Box>
           </Box>
-          <Box display="flex" marginTop="30px">
-            <MenuCarousal menu={MenuItems} />
-          </Box>
         </>
+      </ResponsiveContainer>
+      <ResponsiveContainer noRightMargin>
+        <Box display="flex" marginTop="30px">
+          <MenuCarousal menu={MenuItems} />
+        </Box>
       </ResponsiveContainer>
     </Box>
   );

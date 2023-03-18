@@ -60,10 +60,12 @@ export default function RecentlyViewed() {
               </Box>
             </Box>
           </Box>
-          <Box display="flex" marginTop="30px">
-            <LocationsCarousal locations={Locations} />
-          </Box>
         </>
+      </ResponsiveContainer>
+      <ResponsiveContainer noRightMargin>
+        <Box display="flex" marginTop="30px">
+          <LocationsCarousal locations={Locations} />
+        </Box>
       </ResponsiveContainer>
     </Box>
   );

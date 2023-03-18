@@ -2,6 +2,7 @@ import { ResponsiveContainerProps } from "@/types";
 import { Box, useMediaQuery, useTheme } from "@mui/material";
 
 export default function ResponsiveContainer({
+  noRightMargin = false,
   children,
 }: ResponsiveContainerProps) {
   let screenSize = "";
@@ -18,28 +19,32 @@ export default function ResponsiveContainer({
     switch (screenSize) {
       case "md": {
         return {
-          margin: "0px 15px 0px",
+          marginLeft: "15px",
+          marginRight: !noRightMargin ? "15px" : "0px",
         };
       }
       case "lg": {
         return {
-          margin: "0px 20px 0px",
+          marginLeft: "20px",
+          marginRight: !noRightMargin ? "20px" : "0px",
         };
       }
       case "xl": {
         return {
-          margin: "0px 25px 0px",
+          marginLeft: "25px",
+          marginRight: !noRightMargin ? "25px" : "0px",
         };
       }
       case "xxl": {
         return {
-          margin: "0px 200px 0px",
+          marginLeft: "200px",
+          marginRight: !noRightMargin ? "200px" : "0px",
         };
       }
       default: {
         return {
           marginLeft: "0px",
-          marginRight: "0px",
+          marginRight: !noRightMargin ? "0px" : "0px",
         };
       }
     }
