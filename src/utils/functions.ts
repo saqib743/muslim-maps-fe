@@ -9,39 +9,6 @@ export const calculateResponsiveMargins = (
     case "navbar-settings": {
       return calcNavBarSettingsMargins(screenSize);
     }
-    case "placeDescriptions":
-      return calcPlaceDescriptionsMargins(screenSize);
-  }
-};
-
-const calcPlaceDescriptionsMargins = (screenSize: string) => {
-  switch (screenSize) {
-    case "md": {
-      return {
-        margin: "0px 10px 0px 0px",
-      };
-    }
-    case "lg": {
-      return {
-        margin: "0px 15px 0px 0px",
-      };
-    }
-    case "xl": {
-      return {
-        margin: "0px 20px 0px 0px",
-      };
-    }
-    case "xxl": {
-      return {
-        margin: "0px 25px 0px 0px",
-      };
-    }
-    default: {
-      return {
-        marginLeft: "0px",
-        marginRight: "0px",
-      };
-    }
   }
 };
 
@@ -81,6 +48,77 @@ const calcNavBarMargins = (screenSize: string) => {
     case "md": {
       return {
         margin: "0px 0px 0px 5px",
+      };
+    }
+    case "lg": {
+      return {
+        margin: "0px 0px 0px 10px",
+      };
+    }
+    case "xl": {
+      return {
+        margin: "0px 0px 0px 15px",
+      };
+    }
+    case "xxl": {
+      return {
+        margin: "0px 0px 0px 20px",
+      };
+    }
+    default: {
+      return {
+        marginLeft: "0px",
+        marginRight: "0px",
+      };
+    }
+  }
+};
+
+export const calculateResponsiveWidths = (
+  component: string,
+  screenSize: string
+) => {
+  switch (component) {
+    case "placeDescriptions":
+      return calcPlaceDescriptionWidths(screenSize);
+  }
+};
+
+const calcPlaceDescriptionWidths = (screenSize: string) => {
+  switch (screenSize) {
+    case "md": {
+      return {
+        width: "80%",
+      };
+    }
+    case "lg": {
+      return {
+        width: "70%",
+      };
+    }
+    case "xl": {
+      return {
+        width: "60%",
+      };
+    }
+    case "xxl": {
+      return {
+        width: "55%",
+      };
+    }
+    default: {
+      return {
+        width: "50%",
+      };
+    }
+  }
+};
+
+const calcLocationWidths = (screenSize: string) => {
+  switch (screenSize) {
+    case "md": {
+      return {
+        width: "100px",
       };
     }
     case "lg": {
