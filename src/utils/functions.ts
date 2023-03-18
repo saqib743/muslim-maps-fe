@@ -85,6 +85,10 @@ export const calculateResponsiveWidths = (
       return calcRestaurantsAndAttractionsWidths(screenSize);
     case "siteInformation":
       return calcSiteInformationWidths(screenSize);
+    case "reviewRating":
+      return calcReviewRatingWidths(screenSize);
+    case "reviewComments":
+      return calcReviewCommentsWidths(screenSize);
   }
 };
 
@@ -173,6 +177,66 @@ const calcSiteInformationWidths = (screenSize: string) => {
     default: {
       return {
         width: "30%",
+      };
+    }
+  }
+};
+
+const calcReviewRatingWidths = (screenSize: string) => {
+  switch (screenSize) {
+    case "md": {
+      return {
+        width: "40%",
+      };
+    }
+    case "lg": {
+      return {
+        width: "42%",
+      };
+    }
+    case "xl": {
+      return {
+        width: "35%",
+      };
+    }
+    case "xxl": {
+      return {
+        width: "35%",
+      };
+    }
+    default: {
+      return {
+        width: "35%",
+      };
+    }
+  }
+};
+
+const calcReviewCommentsWidths = (screenSize: string) => {
+  switch (screenSize) {
+    case "md": {
+      return {
+        width: "60%",
+      };
+    }
+    case "lg": {
+      return {
+        width: "60%",
+      };
+    }
+    case "xl": {
+      return {
+        width: "65%",
+      };
+    }
+    case "xxl": {
+      return {
+        width: "68%",
+      };
+    }
+    default: {
+      return {
+        width: "55%",
       };
     }
   }
