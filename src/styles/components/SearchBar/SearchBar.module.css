@@ -5,6 +5,17 @@
   width: 400px;
   display: flex;
 }
+@media only screen and (max-width: 1536px) {
+  .container {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 180px;
+  }
+}
+
 .flexRow {
   display: flex;
   flex-direction: row;
