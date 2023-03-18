@@ -1,9 +1,19 @@
 import ResponsiveContainer from "@/components/ResponsiveContainer/ResponsiveContainer";
-import { Box, Typography } from "@mui/material";
+import { calculateResponsiveWidths } from "@/utils";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import CommentsManager from "./CommentsManager";
 import { ReviewPanel } from "./ReviewPanel";
 
 export default function Reviews() {
+  let screenSize = "";
+  const theme = useTheme();
+
+  if (useMediaQuery(theme.breakpoints.up("xs"))) screenSize = "xs";
+  if (useMediaQuery(theme.breakpoints.up("sm"))) screenSize = "sm";
+  if (useMediaQuery(theme.breakpoints.up("md"))) screenSize = "md";
+  if (useMediaQuery(theme.breakpoints.up("lg"))) screenSize = "lg";
+  if (useMediaQuery("(min-width:1530px)")) screenSize = "xl";
+  if (useMediaQuery("(min-width:1920px)")) screenSize = "xxl";
   return (
     <ResponsiveContainer>
       <Box
@@ -12,7 +22,11 @@ export default function Reviews() {
         marginTop="30px"
         marginBottom="30px"
       >
-        <Box width="35%" display="flex" flexDirection="column">
+        <Box
+          {...calculateResponsiveWidths("reviewRating", screenSize)}
+          display="flex"
+          flexDirection="column"
+        >
           <ReviewPanel />
           <Box
             marginTop="30px"
@@ -45,7 +59,11 @@ export default function Reviews() {
             </Typography>
           </Box>
         </Box>
-        <Box width="55%" display="flex" justifyContent="center">
+        <Box
+          {...calculateResponsiveWidths("reviewComments", screenSize)}
+          display="flex"
+          justifyContent="center"
+        >
           <CommentsManager />
         </Box>
       </Box>

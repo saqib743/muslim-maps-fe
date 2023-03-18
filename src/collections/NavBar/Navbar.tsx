@@ -19,6 +19,9 @@ import { SearchBar } from "@/components";
 import Image from "next/image";
 import ResponsiveContainer from "@/components/ResponsiveContainer/ResponsiveContainer";
 
+import { useMediaQuery, useTheme } from "@mui/material";
+import { calculateResponsiveMargins } from "@/utils";
+
 const pages = [
   "Home",
   "Explore",
@@ -29,6 +32,16 @@ const pages = [
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
+  let screenSize = "";
+  const theme = useTheme();
+
+  if (useMediaQuery(theme.breakpoints.up("xs"))) screenSize = "xs";
+  if (useMediaQuery(theme.breakpoints.up("sm"))) screenSize = "sm";
+  if (useMediaQuery(theme.breakpoints.up("md"))) screenSize = "md";
+  if (useMediaQuery(theme.breakpoints.up("lg"))) screenSize = "lg";
+  if (useMediaQuery("(min-width:1530px)")) screenSize = "xl";
+  if (useMediaQuery("(min-width:1920px)")) screenSize = "xxl";
+
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -140,7 +153,7 @@ function ResponsiveAppBar() {
                   lineHeight="26px"
                   letterSpacing="0.01em"
                   fontWeight="500"
-                  marginLeft="15px"
+                  {...calculateResponsiveMargins("navbar", screenSize)}
                 >
                   {page}
                 </Typography>
@@ -151,18 +164,18 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Box display="flex">
               <Tooltip title="Country">
-                <Box marginLeft="15px">
+                <Box {...calculateResponsiveMargins("navbar", screenSize)}>
                   <Image src={country} alt="country" />
                 </Box>
               </Tooltip>
               <Tooltip title="favourite">
-                <Box marginLeft="15px">
+                <Box {...calculateResponsiveMargins("navbar", screenSize)}>
                   {" "}
                   <Image src={favourite} alt="favourite" />
                 </Box>
               </Tooltip>
               <Tooltip title="Notifications">
-                <Box marginLeft="15px">
+                <Box {...calculateResponsiveMargins("navbar", screenSize)}>
                   {" "}
                   <Image src={notifications} alt="notifications" />
                 </Box>
@@ -170,7 +183,13 @@ function ResponsiveAppBar() {
               <Tooltip title="Open settings">
                 <IconButton
                   onClick={handleOpenUserMenu}
-                  sx={{ p: 0, marginLeft: "20px" }}
+                  sx={{
+                    p: 0,
+                    ...calculateResponsiveMargins(
+                      "navbar-settings",
+                      screenSize
+                    ),
+                  }}
                 >
                   <Avatar
                     alt="Remy Sharp"
