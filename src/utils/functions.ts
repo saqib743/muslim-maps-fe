@@ -81,6 +81,10 @@ export const calculateResponsiveWidths = (
   switch (component) {
     case "placeDescriptions":
       return calcPlaceDescriptionWidths(screenSize);
+    case "restaurantsAndAttractions":
+      return calcRestaurantsAndAttractionsWidths(screenSize);
+    case "siteInformation":
+      return calcSiteInformationWidths(screenSize);
   }
 };
 
@@ -114,32 +118,61 @@ const calcPlaceDescriptionWidths = (screenSize: string) => {
   }
 };
 
-const calcLocationWidths = (screenSize: string) => {
+const calcRestaurantsAndAttractionsWidths = (screenSize: string) => {
   switch (screenSize) {
     case "md": {
       return {
-        width: "100px",
+        width: "50%",
       };
     }
     case "lg": {
       return {
-        margin: "0px 0px 0px 10px",
+        width: "63%",
       };
     }
     case "xl": {
       return {
-        margin: "0px 0px 0px 15px",
+        width: "68%",
       };
     }
     case "xxl": {
       return {
-        margin: "0px 0px 0px 20px",
+        width: "70%",
       };
     }
     default: {
       return {
-        marginLeft: "0px",
-        marginRight: "0px",
+        width: "70%",
+      };
+    }
+  }
+};
+
+const calcSiteInformationWidths = (screenSize: string) => {
+  switch (screenSize) {
+    case "md": {
+      return {
+        width: "45%",
+      };
+    }
+    case "lg": {
+      return {
+        width: "40%",
+      };
+    }
+    case "xl": {
+      return {
+        width: "30%",
+      };
+    }
+    case "xxl": {
+      return {
+        width: "30%",
+      };
+    }
+    default: {
+      return {
+        width: "30%",
       };
     }
   }
