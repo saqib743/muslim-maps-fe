@@ -1,10 +1,4 @@
-import {
-  Box,
-  Checkbox,
-  FormControlLabel,
-  Rating,
-  Typography,
-} from "@mui/material";
+import { Box, Checkbox, FormControlLabel, Typography } from "@mui/material";
 
 export default function TravellerTypes() {
   return (

@@ -1,6 +1,6 @@
 import { CommentsProps } from "@/types";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import { Avatar, Box, Pagination, Rating, Typography } from "@mui/material";
+import { Box, Pagination, Rating, Typography } from "@mui/material";
 import Image from "next/image";
 import profilePicture_1 from "../../resources/Reviews/1/profilePicture.svg";
 import picture_2_1 from "../../resources/Reviews/2/picture_1.svg";
