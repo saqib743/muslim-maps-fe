@@ -6,7 +6,6 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
@@ -15,11 +14,10 @@ import AdbIcon from "@mui/icons-material/Adb";
 import logo from "../../resources/logo.svg";
 import country from "../../resources/country.svg";
 import favourite from "../../resources/favourite.svg";
-import habibi from "../../resources/habibi.jpg";
 import notifications from "../../resources/notifications.svg";
-import { Icon } from "@mui/material";
 import { SearchBar } from "@/components";
 import Image from "next/image";
+import ResponsiveContainer from "@/components/ResponsiveContainer/ResponsiveContainer";
 
 const pages = [
   "Home",
@@ -63,7 +61,7 @@ function ResponsiveAppBar() {
         padding: "8px 0px 8px 0px",
       }}
     >
-      <Container maxWidth="xl">
+      <ResponsiveContainer>
         <Toolbar disableGutters>
           <Image src={logo} alt={"logo"} />
 
@@ -205,7 +203,7 @@ function ResponsiveAppBar() {
             </Menu> */}
           </Box>
         </Toolbar>
-      </Container>
+      </ResponsiveContainer>
     </AppBar>
   );
 }

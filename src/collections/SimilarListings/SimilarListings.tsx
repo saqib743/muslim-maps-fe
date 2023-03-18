@@ -7,10 +7,11 @@ import sultanMehmatHotel from "../../resources/similarListing/sultanMehmatHotel.
 import arrowLeft from "../../resources/arrowLeft.svg";
 import arrowRight from "../../resources/arrowRight.svg";
 
-import { Container, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import Button from "@/components/Button/Button";
 import LocationsCarousal from "@/components/LocationsCarousal/LocationsCarousal";
 import { Box } from "@mui/system";
+import ResponsiveContainer from "@/components/ResponsiveContainer/ResponsiveContainer";
 export default function SimilarListings() {
   return (
     <Box
@@ -18,54 +19,56 @@ export default function SimilarListings() {
       sx={{ backgroundColor: "#FCFCFC" }}
       paddingBottom="30px"
     >
-      <Container maxWidth="xl">
-        <Box
-          display="flex"
-          justifyContent="space-between"
-          alignItems="center"
-          marginTop="30px"
-        >
-          <Typography
-            fontSize="24px"
-            fontFamily="Gilroy"
-            fontWeight="600"
-            letterSpacing="0.01em"
-            lineHeight="35px"
-            textAlign="left"
+      <ResponsiveContainer>
+        <>
+          <Box
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
+            marginTop="30px"
           >
-            Similar Listing
-          </Typography>
-          <Box display="flex" alignItems="center">
-            <Box marginLeft="20px">
-              <Button
-                onClick={() => {}}
-                text="See All"
-                variant="primary"
-                justifyContent="space-between"
-              />
-            </Box>
-            <Box marginLeft="20px">
-              <Button
-                icon={arrowLeft}
-                onClick={() => {}}
-                variant="primary"
-                justifyContent="space-between"
-              />
-            </Box>
-            <Box marginLeft="20px">
-              <Button
-                icon={arrowRight}
-                onClick={() => {}}
-                variant="primary"
-                justifyContent="space-between"
-              />
+            <Typography
+              fontSize="24px"
+              fontFamily="Gilroy"
+              fontWeight="600"
+              letterSpacing="0.01em"
+              lineHeight="35px"
+              textAlign="left"
+            >
+              Similar Listing
+            </Typography>
+            <Box display="flex" alignItems="center">
+              <Box marginLeft="20px">
+                <Button
+                  onClick={() => {}}
+                  text="See All"
+                  variant="primary"
+                  justifyContent="space-between"
+                />
+              </Box>
+              <Box marginLeft="20px">
+                <Button
+                  icon={arrowLeft}
+                  onClick={() => {}}
+                  variant="primary"
+                  justifyContent="space-between"
+                />
+              </Box>
+              <Box marginLeft="20px">
+                <Button
+                  icon={arrowRight}
+                  onClick={() => {}}
+                  variant="primary"
+                  justifyContent="space-between"
+                />
+              </Box>
             </Box>
           </Box>
-        </Box>
-        <Box display="flex" marginTop="30px">
-          <LocationsCarousal locations={Locations} />
-        </Box>
-      </Container>
+          <Box display="flex" marginTop="30px">
+            <LocationsCarousal locations={Locations} />
+          </Box>
+        </>
+      </ResponsiveContainer>
     </Box>
   );
 }

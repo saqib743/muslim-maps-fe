@@ -1,11 +1,12 @@
+import ResponsiveContainer from "@/components/ResponsiveContainer/ResponsiveContainer";
 import { Typography } from "@mui/material";
-import { Box, Container } from "@mui/system";
+import { Box } from "@mui/system";
 import Image from "next/image";
 import socialMediaStack from "../../resources/socialMediaStack.svg";
 export default function Footer() {
   return (
     <Box borderTop="2px solid #F3F2F2" padding="0px 30px 0px">
-      <Container maxWidth="xl">
+      <ResponsiveContainer>
         <Box
           marginTop="30px"
           marginBottom="30px"
@@ -24,7 +25,7 @@ export default function Footer() {
             {`© ${new Date().getFullYear()} Muslim maps incorporated`}
           </Typography>
         </Box>
-      </Container>
+      </ResponsiveContainer>
     </Box>
   );
 }
