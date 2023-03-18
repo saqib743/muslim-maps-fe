@@ -5,12 +5,37 @@ import burger from "../../resources/menu/burger.svg";
 import kayoNoodles from "../../resources/menu/limaRoll.svg";
 import arrowLeft from "../../resources/arrowLeft.svg";
 import arrowRight from "../../resources/arrowRight.svg";
-import MenuCarousal from "@/components/MenuCarousal/MenuCarousal";
 import { Typography } from "@mui/material";
 import Button from "@/components/Button/Button";
 import ResponsiveContainer from "@/components/ResponsiveContainer/ResponsiveContainer";
+import Image from "next/image";
+import { MutableRefObject, useRef } from "react";
 
 export default function Menu() {
+  const ref = useRef() as MutableRefObject<HTMLDivElement>;
+
+  const handleScrollLeft = () => {
+    let scrollTarget = ref.current.scrollLeft - 100;
+    if (scrollTarget < 0) scrollTarget = 0;
+    const step = () => {
+      if (ref.current.scrollLeft > scrollTarget) {
+        ref.current.scrollLeft -= 20;
+        requestAnimationFrame(step);
+      }
+    };
+    requestAnimationFrame(step);
+  };
+  const handleScrollRight = () => {
+    let scrollTarget = ref.current.scrollLeft + 100;
+    console.log(scrollTarget);
+    const step = () => {
+      if (ref.current.scrollLeft < scrollTarget) {
+        ref.current.scrollLeft += 20;
+        requestAnimationFrame(step);
+      }
+    };
+    requestAnimationFrame(step);
+  };
   return (
     <Box
       borderTop="2px solid #F3F2F2"
@@ -48,7 +73,7 @@ export default function Menu() {
               <Box marginLeft="20px">
                 <Button
                   icon={arrowLeft}
-                  onClick={() => {}}
+                  onClick={() => handleScrollLeft()}
                   variant="primary"
                   justifyContent="space-between"
                 />
@@ -56,7 +81,7 @@ export default function Menu() {
               <Box marginLeft="20px">
                 <Button
                   icon={arrowRight}
-                  onClick={() => {}}
+                  onClick={() => handleScrollRight()}
                   variant="primary"
                   justifyContent="space-between"
                 />
@@ -67,14 +92,85 @@ export default function Menu() {
       </ResponsiveContainer>
       <ResponsiveContainer noRightMargin>
         <Box display="flex" marginTop="30px">
-          <MenuCarousal menu={MenuItems} />
+          <Box
+            width="100%"
+            overflow="auto"
+            sx={{
+              "::-webkit-scrollbar": {
+                height: "5px",
+              },
+              " ::-webkit-scrollbar-track": {
+                boxShadow: "inset 0 0 5px #D5F4DC",
+                borderRadius: "10px",
+              },
+              "::-webkit-scrollbar-thumb": {
+                background: "#91D29F",
+                borderRadius: "5px",
+              },
+              "::-webkit-scrollbar-thumb:hover": {
+                background: "#1E692E",
+              },
+            }}
+            display="flex"
+            ref={ref}
+          >
+            {menu.map((item, key) => {
+              return (
+                <Box
+                  border="1px solid #F0F0F0"
+                  padding="5px"
+                  borderRadius="10px"
+                  key={key}
+                  marginRight="20px"
+                  width="min-content"
+                >
+                  <Image src={item.image} alt={item.title} />
+                  <Typography
+                    fontSize="20px"
+                    fontFamily="Gilroy-semiBold"
+                    fontWeight="600"
+                    lineHeight="30px"
+                    letterSpacing="0.01em"
+                    textAlign="left"
+                    margin="5px 10px 0px 10px"
+                  >
+                    {item.title}
+                  </Typography>
+                  <Typography
+                    fontSize="14px"
+                    fontFamily="Gilroy"
+                    fontWeight="400"
+                    lineHeight="24px"
+                    letterSpacing="0.01em"
+                    textAlign="left"
+                    margin="5px 10px 0px 10px"
+                    color="#646467"
+                  >
+                    {item.description}
+                  </Typography>
+
+                  <Typography
+                    fontSize="20px"
+                    fontFamily="Gilroy-semiBold"
+                    fontWeight="600"
+                    lineHeight="30px"
+                    letterSpacing="0.01em"
+                    textAlign="left"
+                    margin="5px 10px 0px 10px"
+                  >
+                    {item.price}
+                  </Typography>
+                </Box>
+              );
+            })}
+          </Box>
         </Box>
       </ResponsiveContainer>
     </Box>
   );
 }
 
-const MenuItems = [
+const menu = [
   {
     image: limaRoll,
     title: "Lima Roll",
