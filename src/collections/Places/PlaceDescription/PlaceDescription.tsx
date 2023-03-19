@@ -4,7 +4,9 @@ import verify from "../../../resources/verify.svg";
 import Image from "next/image";
 import Button from "@/components/Button/Button";
 import favIcon from "../../../resources/favIcon.svg";
+import favIconAlt from "../../../resources/favIconAlt.svg";
 import share from "../../../resources/share.svg";
+import shareAlt from "../../../resources/shareAlt.svg";
 import dot from "../../../resources/dot.svg";
 import pin from "../../../resources/pin.svg";
 import dropArrow from "../../../resources/dropArrow.svg";
@@ -48,6 +50,7 @@ export default function PlaceDescription() {
           <Box>
             <Button
               icon={favIcon}
+              iconAlt={favIconAlt}
               onClick={() => {}}
               text="Like"
               variant="primary"
@@ -58,6 +61,7 @@ export default function PlaceDescription() {
           <Box marginLeft="20px">
             <Button
               icon={share}
+              iconAlt={shareAlt}
               onClick={() => {}}
               text="Share"
               variant="primary"

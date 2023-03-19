@@ -1,10 +1,12 @@
 import { ButtonProps } from "@/types";
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Button({
   variant,
   icon,
+  iconAlt,
   text,
   onClick,
   width,
@@ -14,25 +16,34 @@ export default function Button({
   marginRight,
   iconReverse,
 }: ButtonProps) {
+  const [isHovered, setIsHovered] = useState(false);
   const styles = {
     primary: {
       color: "#323232",
+      colorAlt: "white",
       border: "1px solid #F0F0F0",
       backgroundColor: "white",
+      backgroundColorAlt: "#323232",
     },
     green: {
       color: "white",
+      colorAlt: "#1E692E",
       backgroundColor: "#1E692E",
+      backgroundColorAlt: "white",
       border: "1px solid #1E692E",
     },
     grey: {
       color: "black",
+      colorAlt: "#F0F0F0",
       backgroundColor: "#F0F0F0",
+      backgroundColorAlt: "black",
       border: "1px solid #F0F0F0",
     },
     black: {
       color: "white",
+      colorAlt: "#010F07",
       backgroundColor: "#010F07",
+      backgroundColorAlt: "white",
       border: "1px solid #010F07",
     },
   };
@@ -40,7 +51,11 @@ export default function Button({
     <Box
       sx={{
         backgroundColor: styles[variant].backgroundColor,
-        ":hover": { cursor: "pointer" },
+        ":hover": {
+          cursor: "pointer",
+          backgroundColor: styles[variant].backgroundColorAlt,
+          color: styles[variant].colorAlt,
+        },
       }}
       onClick={onClick}
       borderRadius="100px"
@@ -54,8 +69,12 @@ export default function Button({
       height={lowPadding ? "" : "50px"}
       marginRight={marginRight}
       flexDirection={iconReverse !== undefined ? "row-reverse" : "initial"}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
-      {icon && <Image src={icon} alt="icon" />}
+      {icon && iconAlt && (
+        <Image src={!isHovered ? icon : iconAlt} alt="icon" />
+      )}
       <Typography
         fontFamily="Gilroy-medium"
         fontSize="16px"
