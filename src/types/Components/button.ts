@@ -2,6 +2,7 @@ export interface ButtonProps {
   variant: "primary" | "green" | "grey" | "black";
   text?: string;
   icon?: any;
+  iconAlt?: any;
   onClick: () => void;
   width?: string;
   justifyContent: "space-between" | "center";

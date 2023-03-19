@@ -1,7 +1,5 @@
-import Box from "@mui/material/Box";
 import { Search } from "@mui/icons-material";
 import Input from "@mui/material/Input";
-import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import styles from "../../styles/components/SearchBar/SearchBar.module.css";
 

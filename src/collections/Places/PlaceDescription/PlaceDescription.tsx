@@ -1,16 +1,28 @@
-import { Rating, Typography } from "@mui/material";
+import { Rating, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
 import verify from "../../../resources/verify.svg";
 import Image from "next/image";
 import Button from "@/components/Button/Button";
 import favIcon from "../../../resources/favIcon.svg";
+import favIconAlt from "../../../resources/favIconAlt.svg";
 import share from "../../../resources/share.svg";
+import shareAlt from "../../../resources/shareAlt.svg";
 import dot from "../../../resources/dot.svg";
 import pin from "../../../resources/pin.svg";
 import dropArrow from "../../../resources/dropArrow.svg";
 import away from "../../../resources/away.svg";
+import { calculateResponsiveWidths } from "@/utils";
 
 export default function PlaceDescription() {
+  let screenSize = "";
+  const theme = useTheme();
+
+  if (useMediaQuery(theme.breakpoints.up("xs"))) screenSize = "xs";
+  if (useMediaQuery(theme.breakpoints.up("sm"))) screenSize = "sm";
+  if (useMediaQuery(theme.breakpoints.up("md"))) screenSize = "md";
+  if (useMediaQuery(theme.breakpoints.up("lg"))) screenSize = "lg";
+  if (useMediaQuery("(min-width:1530px)")) screenSize = "xl";
+  if (useMediaQuery("(min-width:1920px)")) screenSize = "xxl";
   return (
     <Box marginTop="20px" marginBottom="20px">
       <Box
@@ -38,6 +50,7 @@ export default function PlaceDescription() {
           <Box>
             <Button
               icon={favIcon}
+              iconAlt={favIconAlt}
               onClick={() => {}}
               text="Like"
               variant="primary"
@@ -48,6 +61,7 @@ export default function PlaceDescription() {
           <Box marginLeft="20px">
             <Button
               icon={share}
+              iconAlt={shareAlt}
               onClick={() => {}}
               text="Share"
               variant="primary"
@@ -61,7 +75,7 @@ export default function PlaceDescription() {
         display="flex"
         justifyContent="space-between"
         alignItems="center"
-        width="60%"
+        {...calculateResponsiveWidths("placeDescriptions", screenSize)}
         marginTop="20px"
       >
         <Box

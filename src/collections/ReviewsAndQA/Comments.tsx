@@ -1,6 +1,6 @@
 import { CommentsProps } from "@/types";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import { Avatar, Box, Pagination, Rating, Typography } from "@mui/material";
+import { Box, Pagination, Rating, Typography } from "@mui/material";
 import Image from "next/image";
 import profilePicture_1 from "../../resources/Reviews/1/profilePicture.svg";
 import picture_2_1 from "../../resources/Reviews/2/picture_1.svg";
@@ -13,6 +13,8 @@ import like from "../../resources/like.svg";
 import translate from "../../resources/translate.svg";
 import Button from "@/components/Button/Button";
 import favIcon from "../../resources/favIcon.svg";
+import favIconAlt from "../../resources/favIconAlt.svg";
+
 export default function Comments() {
   return (
     <Box display="flex" flexDirection="column" width="100%" alignItems="center">
@@ -198,6 +200,7 @@ const renderComment = (comment: CommentsProps) => {
         <Box>
           <Button
             icon={favIcon}
+            iconAlt={favIconAlt}
             onClick={() => {}}
             text={
               comment.likes > 1000

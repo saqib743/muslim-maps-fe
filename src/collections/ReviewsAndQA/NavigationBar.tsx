@@ -1,10 +1,11 @@
-import { Tab, Tabs, Typography } from "@mui/material";
-import { Box, Container } from "@mui/system";
+import { Typography } from "@mui/material";
+import { Box } from "@mui/system";
 import React from "react";
-import PropTypes from "prop-types";
+
 import Button from "@/components/Button/Button";
 import { SearchBar } from "@/components";
 import { NavigationBarProps } from "@/types";
+import ResponsiveContainer from "@/components/ResponsiveContainer/ResponsiveContainer";
 
 export default function NavigationBar({ handleChange }: NavigationBarProps) {
   const [value, setValue] = React.useState(0);
@@ -16,14 +17,14 @@ export default function NavigationBar({ handleChange }: NavigationBarProps) {
 
   return (
     <Box borderTop="2px solid #F3F2F2" borderBottom="2px solid #F3F2F2">
-      <Container maxWidth="xl">
+      <ResponsiveContainer>
         <Box
           display="flex"
           justifyContent="space-between"
           alignItems="center"
           marginTop="30px"
         >
-          <Box width="50%" display="flex">
+          <Box width="45%" display="flex">
             <Box onClick={() => handleToggle(0)} sx={{ cursor: "pointer" }}>
               <Typography
                 fontFamily={value === 0 ? "Gilroy-semiBold" : "Gilroy"}
@@ -59,7 +60,7 @@ export default function NavigationBar({ handleChange }: NavigationBarProps) {
             </Box>
           </Box>
           <Box
-            width="50%"
+            width="55%"
             display="flex"
             alignItems="center"
             justifyContent="flex-end"
@@ -92,7 +93,7 @@ export default function NavigationBar({ handleChange }: NavigationBarProps) {
             </Box>
           </Box>
         </Box>
-      </Container>
+      </ResponsiveContainer>
     </Box>
   );
 }

@@ -1,12 +1,4 @@
-import {
-  Box,
-  Checkbox,
-  Divider,
-  FormControlLabel,
-  Radio,
-  Rating,
-  Typography,
-} from "@mui/material";
+import { Box, Divider, Rating, Typography } from "@mui/material";
 import TravelerRatings from "./TravellerRatings";
 import TravellerTypes from "./TravellerTypes";
 

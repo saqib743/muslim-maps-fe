@@ -10,6 +10,7 @@ import reciever from "../../resources/reciever.svg";
 import twitter from "../../resources/twitter.svg";
 import pin from "../../resources/pin.svg";
 import navigation from "../../resources/navigation.svg";
+import navigationAlt from "../../resources/navigationAlt.svg";
 import Button from "@/components/Button/Button";
 
 export default function SiteInformation() {
@@ -38,6 +39,7 @@ export default function SiteInformation() {
       <Box marginBottom="20px">
         <Button
           icon={navigation}
+          iconAlt={navigationAlt}
           onClick={() => {}}
           variant="green"
           text="Get Direction"
