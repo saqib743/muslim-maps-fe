@@ -5,6 +5,8 @@ import burger from "../../resources/menu/burger.svg";
 import kayoNoodles from "../../resources/menu/limaRoll.svg";
 import arrowLeft from "../../resources/arrowLeft.svg";
 import arrowRight from "../../resources/arrowRight.svg";
+import arrowLeftAlt from "../../resources/arrowLeftAlt.svg";
+import arrowRightAlt from "../../resources/arrowRightAlt.svg";
 import { Typography } from "@mui/material";
 import Button from "@/components/Button/Button";
 import ResponsiveContainer from "@/components/ResponsiveContainer/ResponsiveContainer";
@@ -15,22 +17,21 @@ export default function Menu() {
   const ref = useRef() as MutableRefObject<HTMLDivElement>;
 
   const handleScrollLeft = () => {
-    let scrollTarget = ref.current.scrollLeft - 100;
+    let scrollTarget = ref.current.scrollLeft - 325;
     if (scrollTarget < 0) scrollTarget = 0;
     const step = () => {
       if (ref.current.scrollLeft > scrollTarget) {
-        ref.current.scrollLeft -= 20;
+        ref.current.scrollLeft -= 35;
         requestAnimationFrame(step);
       }
     };
     requestAnimationFrame(step);
   };
   const handleScrollRight = () => {
-    let scrollTarget = ref.current.scrollLeft + 100;
-    console.log(scrollTarget);
+    let scrollTarget = ref.current.scrollLeft + 325;
     const step = () => {
       if (ref.current.scrollLeft < scrollTarget) {
-        ref.current.scrollLeft += 20;
+        ref.current.scrollLeft += 35;
         requestAnimationFrame(step);
       }
     };
@@ -73,6 +74,7 @@ export default function Menu() {
               <Box marginLeft="20px">
                 <Button
                   icon={arrowLeft}
+                  iconAlt={arrowLeftAlt}
                   onClick={() => handleScrollLeft()}
                   variant="primary"
                   justifyContent="space-between"
@@ -81,6 +83,7 @@ export default function Menu() {
               <Box marginLeft="20px">
                 <Button
                   icon={arrowRight}
+                  iconAlt={arrowRightAlt}
                   onClick={() => handleScrollRight()}
                   variant="primary"
                   justifyContent="space-between"
@@ -208,14 +211,32 @@ const menu = [
     price: "₺55",
   },
   {
+    image: limaRoll,
+    title: "Lima Roll",
+    description: "Description about dish, ingredient and other goes here.",
+    price: "₺55",
+  },
+  {
     image: bluffinTuna,
     title: "Bluffin Tuna",
     description: "Description about dish, ingredient and other goes here.",
     price: "₺55",
   },
   {
+    image: kayoNoodles,
+    title: "Kayo Noodles",
+    description: "Description about dish, ingredient and other goes here.",
+    price: "₺55",
+  },
+  {
     image: limaRoll,
     title: "Lima Roll",
+    description: "Description about dish, ingredient and other goes here.",
+    price: "₺55",
+  },
+  {
+    image: burger,
+    title: "Burger",
     description: "Description about dish, ingredient and other goes here.",
     price: "₺55",
   },

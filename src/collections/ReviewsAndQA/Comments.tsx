@@ -13,6 +13,8 @@ import like from "../../resources/like.svg";
 import translate from "../../resources/translate.svg";
 import Button from "@/components/Button/Button";
 import favIcon from "../../resources/favIcon.svg";
+import favIconAlt from "../../resources/favIconAlt.svg";
+
 export default function Comments() {
   return (
     <Box display="flex" flexDirection="column" width="100%" alignItems="center">
@@ -198,6 +200,7 @@ const renderComment = (comment: CommentsProps) => {
         <Box>
           <Button
             icon={favIcon}
+            iconAlt={favIconAlt}
             onClick={() => {}}
             text={
               comment.likes > 1000

@@ -4,6 +4,8 @@ import heritageArtGallery from "../../resources/attractionsNearBy/heritageArtGal
 
 import arrowLeft from "../../resources/arrowLeft.svg";
 import arrowRight from "../../resources/arrowRight.svg";
+import arrowLeftAlt from "../../resources/arrowLeftAlt.svg";
+import arrowRightAlt from "../../resources/arrowRightAlt.svg";
 
 import { Rating, Typography } from "@mui/material";
 import Button from "@/components/Button/Button";
@@ -14,22 +16,21 @@ export default function AttractionsNearBy() {
   const ref = useRef() as MutableRefObject<HTMLDivElement>;
 
   const handleScrollLeft = () => {
-    let scrollTarget = ref.current.scrollLeft - 100;
+    let scrollTarget = ref.current.scrollLeft - 325;
     if (scrollTarget < 0) scrollTarget = 0;
     const step = () => {
       if (ref.current.scrollLeft > scrollTarget) {
-        ref.current.scrollLeft -= 20;
+        ref.current.scrollLeft -= 35;
         requestAnimationFrame(step);
       }
     };
     requestAnimationFrame(step);
   };
   const handleScrollRight = () => {
-    let scrollTarget = ref.current.scrollLeft + 100;
-    console.log(scrollTarget);
+    let scrollTarget = ref.current.scrollLeft + 325;
     const step = () => {
       if (ref.current.scrollLeft < scrollTarget) {
-        ref.current.scrollLeft += 20;
+        ref.current.scrollLeft += 35;
         requestAnimationFrame(step);
       }
     };
@@ -65,6 +66,7 @@ export default function AttractionsNearBy() {
           <Box marginLeft="20px">
             <Button
               icon={arrowLeft}
+              iconAlt={arrowLeftAlt}
               onClick={() => handleScrollLeft()}
               variant="primary"
               justifyContent="space-between"
@@ -73,6 +75,7 @@ export default function AttractionsNearBy() {
           <Box marginLeft="20px">
             <Button
               icon={arrowRight}
+              iconAlt={arrowRightAlt}
               onClick={() => handleScrollRight()}
               variant="primary"
               justifyContent="space-between"
@@ -220,6 +223,69 @@ const locations = [
     image: historicAreasOfIstanbul,
     title: "Historic Areas Of Istanbul",
     description: "HIstoric Place",
+    reviews: { rating: 4, reviewCount: 98 },
+    location: "₺ • 3.4 kms away",
+  },
+  {
+    image: historicAreasOfIstanbul,
+    title: "Historic Areas Of Istanbul",
+    description: "HIstoric Place",
+    reviews: { rating: 4, reviewCount: 98 },
+    location: "₺ • 3.4 kms away",
+  },
+  {
+    image: aasofyaCamii,
+    title: "Aasofya Camii",
+    description: "Theater",
+    reviews: { rating: 4, reviewCount: 98 },
+    location: "₺ • 3.4 kms away",
+  },
+  {
+    image: heritageArtGallery,
+    title: "Heritage Art Gallery",
+    description: "Art Galleries",
+    reviews: { rating: 4, reviewCount: 98 },
+    location: "₺ • 3.4 kms away",
+  },
+  {
+    image: aasofyaCamii,
+    title: "Aasofya Camii",
+    description: "Theater",
+    reviews: { rating: 4, reviewCount: 98 },
+    location: "₺ • 3.4 kms away",
+  },
+  {
+    image: heritageArtGallery,
+    title: "Heritage Art Gallery",
+    description: "Art Galleries",
+    reviews: { rating: 4, reviewCount: 98 },
+    location: "₺ • 3.4 kms away",
+  },
+  {
+    image: historicAreasOfIstanbul,
+    title: "Historic Areas Of Istanbul",
+    description: "HIstoric Place",
+    reviews: { rating: 4, reviewCount: 98 },
+    location: "₺ • 3.4 kms away",
+  },
+  {
+    image: historicAreasOfIstanbul,
+    title: "Historic Areas Of Istanbul",
+    description: "HIstoric Place",
+    reviews: { rating: 4, reviewCount: 98 },
+    location: "₺ • 3.4 kms away",
+  },
+  {
+    image: aasofyaCamii,
+    title: "Aasofya Camii",
+    description: "Theater",
+    reviews: { rating: 4, reviewCount: 98 },
+    location: "₺ • 3.4 kms away",
+  },
+  {
+    image: heritageArtGallery,
+    title: "Heritage Art Gallery",
+    description: "Art Galleries",
     reviews: { rating: 4, reviewCount: 98 },
     location: "₺ • 3.4 kms away",
   },

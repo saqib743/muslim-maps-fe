@@ -1,6 +1,7 @@
 import Button from "@/components/Button/Button";
 import { Box } from "@mui/material";
 import filter from "../../resources/filter.svg";
+import filterAlt from "../../resources/filterAlt.svg";
 import dropArrow from "../../resources/dropArrow.svg";
 import Comments from "./Comments";
 export default function CommentsManager() {
@@ -33,6 +34,7 @@ export default function CommentsManager() {
             variant="primary"
             text="Filter"
             icon={filter}
+            iconAlt={filterAlt}
             justifyContent="center"
             iconReverse
           />
