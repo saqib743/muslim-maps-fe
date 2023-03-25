@@ -9,7 +9,7 @@ import ResponsiveAppBar from "@/collections/NavBar/Navbar";
 import BottomNavigation from "@/collections/BottomNavigation/BottomNavigation";
 import { Container, Grid, Typography } from "@mui/material";
 import Footer from "@/collections/Footer/Footer";
-
+import { Analytics } from "@vercel/analytics/react";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
@@ -41,6 +41,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Grid display={{ xs: "none", md: "block" }}>
         <ResponsiveAppBar />
         <Component {...pageProps} />
+        <Analytics />
         <BottomNavigation />
         <Footer />
       </Grid>
